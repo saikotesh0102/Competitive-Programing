@@ -6,18 +6,11 @@ public class Solution {
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner scan = new Scanner(System.in);
-        int flag = 0;
         
         while(scan.hasNextLine()){
             int N = Integer.parseInt(scan.nextLine());
             if(N == 0){
                 break;
-            }
-            
-            if(flag != 0){
-                System.out.print("\n");
-            }else{
-                flag++;
             }
             
             int start = 01234;
@@ -38,6 +31,7 @@ public class Solution {
             if(!found){
                 System.out.print("There are no solutions for " + N + ". \n");
             }
+            System.out.print("\n");
         }
     }
     
